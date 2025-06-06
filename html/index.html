@@ -4,70 +4,83 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/Estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
     <title>EcoVida</title>
 </head>
 <body>
     <header>
+        <div class="logo-container">
+            <img src="logotipo ecologico2.png" alt="Logo Ecovida">
+        </div>
         <h1>EcoVida</h1>
         <nav>
             <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Productos</a></li>
-                <li><a href="#">Contacto</a></li>
+                <li><a href="#hero">Inicio</a></li>
+                <li><a href="#producto">Productos</a></li>
+                <li><a href="#beneficios">Tabla de beneficios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
             </ul>
         </nav>
     </header>
 
-    <section class="hero">
+    <section id="hero" class="hero">
         <div class="hero-content">
             <h2>Vivir de manera sostenible, es vivir con EcoVida</h2>
-            <p>Adentrate a un mundo de productos ecologicos que cuidan a planeta.</p>
+            <p>🌍✨ Sumérgete en un universo de innovación y sostenibilidad.
+            Descubre productos ecológicos que no solo facilitan tu vida diaria, sino que también protegen el planeta. Cada elección cuenta: reduce el impacto ambiental, apuesta por materiales biodegradables y transforma el consumo en un acto de conciencia. Vivir en armonía con la naturaleza es posible, y empieza aquí. 💚
+            </p>
         </div>
         <img src="productos-sustentables-e1680522835202.jpg" alt="Imagen inspiradora para ser sostentables y ecologicos">
     </section>
 
-    <section class="producto">
+    <section id="producto" class="producto">
         <h2>Nuestros productos</h2>
         <div class="producto">
             <img src="recipientes ecologicos.jpg" alt="Producto 1">
             <h3>Taperes y recipientes ecologicos</h3>
             <p>Contamos con recipientes hechos a base de carton reciclable y ecoamigables, para almacenara tus alimentos naturales y cuidar al planeta.</p>
+            <button class="btn-info">Más info</button>
+
         </div>
+
         <div class="producto">
             <img src="Compostas ecoamigables.avif" alt="Producto 2">
             <h3>Compostadores ecoamigable</h3>
             <p>Si tus plantas necesitan crecer, la mejor opcion es nuestro compostador para plantas, donde puedes crear composta natural y plantar los brotes que necesites alimentar.</p>
+            <button class="btn-info">Más info</button>
         </div>
+
         <div class="producto">
             <img src="empaquetados ecoamigables.jpg" alt="Producto 3">
             <h3>empaquetados reciclables y ecoamigables</h3>
             <p>Sabemos que quieres emprender, y cuidar al planeta. En EcoVida, te apoyamos con los productos de empaquetados, donde incluimos paquetes de papel reciclable, vasos para bebidas calientes, cajas de pizzas,etc.</p>
+            <button class="btn-info">Más info</button>
         </div>
     </section>
 
-    <section class="comparativa">
+    <section id="beneficios" class="comparativa">
         <h2>Comparacion de beneficios</h2>
         <table>
-            <caption style="background-color: green; color: aliceblue; padding: 1.0em;;">Tabla de comparacion entre productos</caption>
+            <caption style="background-color: green; color: aliceblue; padding: 1.0em;;">Tabla comparativa de beneficios</caption>
             <tr>
-                <td>Tapares y recipientes</td>
-                <td>Beneficio 1</td>
-                <td>Beneficio 2</td>
+                <td><b>Tapares y recipientes</b></td>
+                <td><b>Beneficio 1: </b>Reducción de residuos plásticos</td>
+                <td><b>Beneficio 2:</b> Materiales biodegradables y reutilizables</td>
             </tr>
             <tr>
-                <td>Compostador Ecoamigable</td>
-                <td>Beneficio 1</td>
-                <td>Beneficio 2</td>
+                <td><b>Compostador Ecoamigable</b></td>
+                <td><b>Beneficio 1: </b>Transformación de desechos orgánicos en abono</td>
+                <td><b>Beneficio 2:</b> Mejora la fertilidad del suelo</td>
             </tr>
             <tr>
-                <td>Empaquetados ecoamigables</td>
-                <td>Beneficio 1</td>
-                <td>Beneficio 2</td>
+                <td><b>Empaquetados ecoamigables</b></td>
+                <td><b>Beneficio 1:</b> Menos impacto ambiental en la producción</td>
+                <td><b>Beneficio 2:</b> Alternativa sostenible frente a envases plásticos</td>
             </tr>
         </table>
     </section>
 
-    <section class="contacto">
+    <section id="contacto" class="contacto">
         <h2>Contáctanos</h2>
         <form>
             <label for="nombre">Nombre:</label>
