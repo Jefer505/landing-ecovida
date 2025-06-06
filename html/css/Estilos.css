@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .logo-container {
   display: flex;
   align-items: center;
@@ -77,6 +81,38 @@ header nav ul li a:hover {
   border-radius: 5px;
 }
 
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  header nav ul {
+    display: flex;
+    flex-direction: column; /* Asegura que los elementos se apilen */
+    align-items: center; /* Centra los elementos */
+    gap: 15px; /* Da mejor separación */
+    padding: 10px 0;
+  }
+
+  header nav ul li {
+    list-style: none; /* Elimina los puntos de lista */
+  }
+
+  header nav ul li a {
+    display: block;
+    padding: 10px 15px;
+    font-size: 1.2em;
+    width: 100%; /* Hace que los enlaces ocupen todo el espacio */
+    text-align: center;
+    border-radius: 5px; /* Suaviza el diseño */
+  }
+}
+
+  .logo-container img {
+    width: 40px;
+  }
+
 .container {
   display: grid;
   grid-template-areas:
@@ -86,6 +122,11 @@ header nav ul li a:hover {
   grid-template-rows: auto 1fr auto;
   min-height: 100vh;
 }
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 .container header {
   grid-area: header;
 }
@@ -141,15 +182,12 @@ main {
   overflow-x: auto;
 }
 
-
 @media (max-width: 768px) {
   .productos {
-    flex-wrap: wrap;
     justify-content: center;
-    overflow-x: visible;
+    gap: 30px; 
   }
 }
-
 
 .productos h2 {
   width: 100%;
@@ -199,8 +237,6 @@ main {
   background: #388E3C; 
   transform: scale(1.05); 
 }
-
-
 
 .contacto {
   grid-area: contacto;
@@ -291,6 +327,18 @@ main {
 .comparativa tr:hover {
   background: #f1f1f1;
 }
+
+@media (max-width: 600px) {
+  .comparativa th, .comparativa td {
+    font-size: 0.85em;
+    padding: 8px; 
+    }
+}
+
+  .comparativa th, .comparativa td {
+    font-size: 0.9em;
+    padding: 5px;
+  }
 
 footer {
   background: #4CAF50;
